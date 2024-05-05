@@ -1,5 +1,4 @@
-
-export type CountriesType = {
+ type CountriesType = {
     name: {
     common?: string,
     official?: string,
@@ -16,3 +15,5 @@ export type CountriesType = {
 }
 
 export default CountriesType;
+
+

@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from "react";
 import styles from "@/pages/main-page/main-page.module.scss";
 import Link from "next/link";
-import CountriesType from "./type";
+import CountriesType from "../../ui/type";
 
-const MainPage = () => {
+export const MainPage = () => {
   const [countries, setCountries] = useState([]);
 
   useEffect(() => {

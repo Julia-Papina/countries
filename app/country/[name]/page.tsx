@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import CountriesType from "@/pages/main-page/type";
+import CountriesType from "@/ui/type";
 export default function Home({ params }: { params: { name: string } }) {
   const [country, setCountry] = useState<CountriesType[]>([]);
   const [loding, setLoding] = useState(false);
