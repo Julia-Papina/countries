@@ -9,12 +9,17 @@ const MainPage = () => {
 
   useEffect(() => {
     const getAllCountry = async () => {
-      const response = await fetch(
+      try{    const response = await fetch(
         "https://restcountries.com/v3.1/region/europe"
       );
       const dataCountries = await response.json();
       setCountries(dataCountries);
-    };
+    } catch (err) {
+      <p>Что-то пошло не так...</p>
+      console.log(err)
+    }
+  }
+  
     getAllCountry();
   }, []);
 
