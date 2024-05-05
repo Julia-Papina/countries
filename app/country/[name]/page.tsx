@@ -36,8 +36,8 @@ export default function Home({ params }: { params: { name: string } }) {
           <p className="flex text-violet-800 md:text-2xl md:leading-normal mb-10">{`Столица: ${country[0]?.capital}`}</p>
           <p className="flex text-violet-800 md:text-2xl md:leading-normal mb-10">{`Численность: ${country[0]?.population}`}</p>
           <Image
-            alt={country[0]?.flags?.alt}
-            src={country[0]?.flags?.svg}
+            alt={`${country[0]?.flags?.alt}`}
+            src={`${country[0]?.flags?.svg}`}
             width={500}
             height={300}
           />
