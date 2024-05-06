@@ -16,8 +16,7 @@ export default function Home({ params }: { params: { name: string } }) {
         setCountry(data);
         setLoding(false);
       } catch(err) {
-        <p>Что-то пошло не так...</p>
-        console.error('Ошибка', err)
+        alert(err)
       }
 
     };
